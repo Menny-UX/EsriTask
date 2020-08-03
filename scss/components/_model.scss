@@ -1,0 +1,175 @@
+#register-modal .modal-header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 8rem;
+    padding: 0px 15px 15px;
+    border-bottom: 1px solid $color-primary;
+    &-icon{
+        background-color: $color-primary;
+        height: 7rem;
+        width: 7rem;
+        & img{
+            width: 100%;
+            height: auto;
+            margin-left: 4px;
+            margin-top: 6px;
+        }
+    }
+    &-text{
+        font-size: 1.4rem;
+        color: $color-black;
+        line-height: 1.6rem;
+        & span{
+            font-weight: 600;
+            font-size: 1.6rem;
+            color: $color-primary;
+            display: block;
+        }
+    }
+}
+.modal-dialog .modal-body{
+    padding: 2.5rem 6rem 8rem;
+}
+.body__container .modal.in .modal-dialog {
+    width: 40%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.modal.fade .modal-dialog {
+    width: 40%;
+}
+.modal{
+    &-body{
+        background-color: $color-background;
+        & .modal__Register-btn{
+            float: right;
+        }
+    }
+    & .modal__signInList{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & .signIn__Item{
+            padding: .5rem;
+            width: 30rem;
+            display: flex;
+            align-items: center;
+            background-color: #8b1538;
+            color: white;
+            margin: .2rem;
+            border-radius: 6px;
+            &:nth-child(1){
+                background-color: #9c5f71;
+            }
+            &:nth-child(2){
+                background-color: #3b589a;
+            }
+            &:nth-child(3){
+                background-color: #55acef;
+            }
+            &:nth-child(4){
+                background-color: #d0422a;
+            }
+            & .singnIn__Item-icon{
+                margin-left: 1rem;
+                & img{
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    object-fit: cover;
+                }
+            }
+            & .singnIn__Item-text{
+                margin-left: 3rem;
+            }
+        }
+    }
+
+}
+.singnIn__Item-icon.u-divider-vertical{
+    &::before{
+        box-shadow: 0px;
+    }
+    &::after{
+        box-shadow: 0px;
+        background-color: $color-white;
+    }
+}
+
+#airPlanModal {
+    &.modal.in .modal-dialog {
+        width: 60%;
+    }
+    & .modal-content{
+        border: 3px solid $color-primary;
+        background-color: $color-white;
+        padding: 3rem;
+        & .btn-primary{
+            margin-top: 14px;
+            background-color: #000032;
+        }
+        & .body__content-wrapper{
+            background-color: #000032;
+            width: 100%;
+            display: flex;
+            & .left__section{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: flex-start;
+                width: 75%;
+                padding: 2rem;
+                .standout__header-pink{
+                    color: $color-white;
+                    background-color: #c11f50;
+                    font-weight: bolder;
+                    display: inline-block;
+                    margin-left: 5px;
+                    padding: 2px 10px;
+                    margin-bottom: 1rem;
+                }
+                &-img{
+                    width: 100%;
+                    & img{
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                } 
+            }
+            & .right__section{
+                width: 25%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                & .company_Logo{
+
+                    & img{
+                        width: 10rem;
+                    }
+                }
+                &-img{
+                    & .detail_image{
+                        width: 16rem;
+                    }
+                }
+            }
+        }
+    }
+}
+.flex-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (min-width: 768px){
+    .modal-dialog {
+        width: 600px;
+        margin: 0 auto !important;
+    }
+}

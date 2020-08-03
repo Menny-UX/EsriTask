@@ -1,0 +1,30 @@
+.gallery__section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    &-header{
+        text-transform: capitalize;
+        font-weight: bolder;
+        margin: 0 0 1rem;
+    }
+    & .gallery__item{
+        
+        & .gallery__item-img{
+            width: 8rem;
+        }
+        & .gallery__item-text{
+            background-color: #8b1538;
+            color: #fff;
+            font-size: 1.2rem;
+            padding: 0.4rem;
+            text-align: center;
+        }
+    }
+
+}
+.gallery__content-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}

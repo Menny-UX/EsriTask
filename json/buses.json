@@ -1,0 +1,78 @@
+{
+    "Buses": [
+        {
+            "id": "1",
+            "name": "City bus 10",
+            "desceiption" : "to sababasha"
+        },
+        {
+            "id": "5",
+            "name": "City bus 12",
+            "desceiption" : "to cairo"
+        },
+        {
+            "id": "3",
+            "name": "City bus 30",
+            "desceiption" : "to Maadi"
+        },
+        {
+            "id": "7",
+            "name": "City bus 345",
+            "desceiption" : "to Tagamoa"
+        },
+        {
+            "id": "8",
+            "name": "City bus 42",
+            "desceiption" : "to Mahatit el raml"
+        },
+        {
+            "id": "55",
+            "name": "City bus 55",
+            "desceiption" : "to Alexandria"
+        },
+        {
+            "id": "7",
+            "name": "City bus 67",
+            "desceiption" : "to Tagamoa"
+        },
+        {
+            "id": "4e",
+            "name": "City bus 56",
+            "desceiption" : "to Mahatit el raml"
+        }
+    ],
+    "Stations" :[
+        {
+            "id": "1",
+            "name": "Station 10"
+        },
+        {
+            "id": "5",
+            "name": "Station 12"
+        },
+        {
+            "id": "3",
+            "name": "Station 30"
+        },
+        {
+            "id": "7",
+            "name": "Station 345"
+        },
+        {
+            "id": "8",
+            "name": "Station 42"
+        },
+        {
+            "id": "55",
+            "name": "Station 55"
+        },
+        {
+            "id": "7",
+            "name": "Station 67"
+        },
+        {
+            "id": "4e",
+            "name": "Station 56"
+        }
+    ]
+}

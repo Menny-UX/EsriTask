@@ -1,0 +1,75 @@
+.header{
+    position: relative;
+    width: 100vw;
+    height: $height-header;
+    background-color: $color-primary;
+    display: flex;
+    justify-content: space-between;
+
+    &>div{
+        padding: .2rem;
+    }
+
+    &__left{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        color: $color-white;
+        justify-content: center;
+        align-items: center;
+
+        &-Logo{
+            height: 100%;
+            width: $width-sidebar;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & img{
+                width: 90%;
+                margin-top: .8rem;
+            }
+        }
+        &-brandName{
+            font-weight: 200;
+            font-size: 1.8rem;
+            line-height: 2rem;
+
+            & span{
+                font-weight: 600;
+                display: block;
+            }
+        }
+        &-text{
+            font-size: 2.6rem;
+            font-weight: 600;
+            color: $color-secondary;
+        }
+    }
+    &__right{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        color: $color-white;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2rem;
+    }
+    &__icon{
+        width: 25px;
+        position: relative;
+        cursor: pointer;
+        & .notification-number{
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: .5px solid #fff;
+            border-radius: 2rem;
+            height: 14px;
+            width: 14px;
+            text-align: center;
+            font-size: 1rem;
+            background-color: $color-secondary;
+            color: $color-black;
+        }
+    }
+}

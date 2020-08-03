@@ -1,0 +1,21 @@
+.body__container{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+.body__main{
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+}
+#viewDiv {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+.content__wrapper{
+    width: 100%;
+    height: 100%;
+}

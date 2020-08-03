@@ -1,0 +1,573 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Lato',sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #333; }
+
+.u-divider-vertical {
+  position: relative;
+  height: 100;
+  margin-right: 2rem; }
+  .u-divider-vertical::before, .u-divider-vertical::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -1rem;
+    width: 1px;
+    height: 100%; }
+  .u-divider-vertical::before {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); }
+  .u-divider-vertical::after {
+    box-shadow: inset -2px -2px 2px 0px rgba(255, 255, 255, 0.1); }
+
+.u-divider-horizontal {
+  position: relative;
+  height: 100; }
+  .u-divider-horizontal::before, .u-divider-horizontal::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0rem;
+    right: 0;
+    width: 100%;
+    height: 1px; }
+  .u-divider-horizontal::before {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); }
+  .u-divider-horizontal::after {
+    box-shadow: inset -2px -2px 2px 0px rgba(255, 255, 255, 0.1); }
+
+.gallery__section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem; }
+  .gallery__section-header {
+    text-transform: capitalize;
+    font-weight: bolder;
+    margin: 0 0 1rem; }
+  .gallery__section .gallery__item .gallery__item-img {
+    width: 8rem; }
+  .gallery__section .gallery__item .gallery__item-text {
+    background-color: #8b1538;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    text-align: center; }
+
+.gallery__content-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px; }
+
+.esri-ui-inner-container .esri-ui-bottom-right {
+  flex-flow: column-reverse; }
+
+.esri-ui-corner .esri-widget.esri-basemap-toggle {
+  position: absolute;
+  right: 5rem; }
+
+.esri-search__container {
+  border-radius: 6px; }
+
+.esri-search__input,
+.esri-ui .esri-component {
+  border-radius: 6px;
+  border: 1px solid #8b1538;
+  margin-bottom: 5px; }
+
+.esri-search .esri-widget--button {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px; }
+
+.esri-input.esri-search__input::placeholder {
+  color: #8b1538; }
+
+.esri-search__submit-button .esri-icon-search::before {
+  color: #8b1538; }
+
+.esri-zoom.esri-widget {
+  border: 0px solid transparent;
+  margin-bottom: 1rem;
+  border-radius: 6px; }
+
+.esri-zoom.esri-widget .esri-widget--button {
+  border: 1px solid #8b1538; }
+
+.esri-component.esri-attribution {
+  border: 0px solid transparent;
+  border-radius: 0px; }
+
+#register-modal .modal-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 8rem;
+  padding: 0px 15px 15px;
+  border-bottom: 1px solid #8b1538; }
+  #register-modal .modal-header-icon {
+    background-color: #8b1538;
+    height: 7rem;
+    width: 7rem; }
+    #register-modal .modal-header-icon img {
+      width: 100%;
+      height: auto;
+      margin-left: 4px;
+      margin-top: 6px; }
+  #register-modal .modal-header-text {
+    font-size: 1.4rem;
+    color: #000;
+    line-height: 1.6rem; }
+    #register-modal .modal-header-text span {
+      font-weight: 600;
+      font-size: 1.6rem;
+      color: #8b1538;
+      display: block; }
+
+.modal-dialog .modal-body {
+  padding: 2.5rem 6rem 8rem; }
+
+.body__container .modal.in .modal-dialog {
+  width: 40%;
+  top: 50%;
+  transform: translate(0, -50%); }
+
+.modal.fade .modal-dialog {
+  width: 40%; }
+
+.modal-body {
+  background-color: #ececec; }
+  .modal-body .modal__Register-btn {
+    float: right; }
+
+.modal .modal__signInList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .modal .modal__signInList .signIn__Item {
+    padding: .5rem;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    background-color: #8b1538;
+    color: white;
+    margin: .2rem;
+    border-radius: 6px; }
+    .modal .modal__signInList .signIn__Item:nth-child(1) {
+      background-color: #9c5f71; }
+    .modal .modal__signInList .signIn__Item:nth-child(2) {
+      background-color: #3b589a; }
+    .modal .modal__signInList .signIn__Item:nth-child(3) {
+      background-color: #55acef; }
+    .modal .modal__signInList .signIn__Item:nth-child(4) {
+      background-color: #d0422a; }
+    .modal .modal__signInList .signIn__Item .singnIn__Item-icon {
+      margin-left: 1rem; }
+      .modal .modal__signInList .signIn__Item .singnIn__Item-icon img {
+        width: 3.5rem;
+        height: 3.5rem;
+        object-fit: cover; }
+    .modal .modal__signInList .signIn__Item .singnIn__Item-text {
+      margin-left: 3rem; }
+
+.singnIn__Item-icon.u-divider-vertical::before {
+  box-shadow: 0px; }
+
+.singnIn__Item-icon.u-divider-vertical::after {
+  box-shadow: 0px;
+  background-color: #fff; }
+
+#airPlanModal.modal.in .modal-dialog {
+  width: 60%; }
+
+#airPlanModal .modal-content {
+  border: 3px solid #8b1538;
+  background-color: #fff;
+  padding: 3rem; }
+  #airPlanModal .modal-content .btn-primary {
+    margin-top: 14px;
+    background-color: #000032; }
+  #airPlanModal .modal-content .body__content-wrapper {
+    background-color: #000032;
+    width: 100%;
+    display: flex; }
+    #airPlanModal .modal-content .body__content-wrapper .left__section {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: flex-start;
+      width: 75%;
+      padding: 2rem; }
+      #airPlanModal .modal-content .body__content-wrapper .left__section .standout__header-pink {
+        color: #fff;
+        background-color: #c11f50;
+        font-weight: bolder;
+        display: inline-block;
+        margin-left: 5px;
+        padding: 2px 10px;
+        margin-bottom: 1rem; }
+      #airPlanModal .modal-content .body__content-wrapper .left__section-img {
+        width: 100%; }
+        #airPlanModal .modal-content .body__content-wrapper .left__section-img img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          object-position: center; }
+    #airPlanModal .modal-content .body__content-wrapper .right__section {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly; }
+      #airPlanModal .modal-content .body__content-wrapper .right__section .company_Logo img {
+        width: 10rem; }
+      #airPlanModal .modal-content .body__content-wrapper .right__section-img .detail_image {
+        width: 16rem; }
+
+.flex-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 600px;
+    margin: 0 auto !important; } }
+
+.bus_Item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #8b1538;
+  padding: 1rem 2rem;
+  cursor: pointer; }
+  .bus_Item-header {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize; }
+    .bus_Item-header .bus_id {
+      width: 3rem;
+      height: 3rem;
+      border: 2px solid cyan;
+      margin: .8rem 1rem .8rem 0;
+      border-radius: 1.5rem;
+      text-align: center;
+      line-height: 2.8rem; }
+    .bus_Item-header .bus_name {
+      font-weight: bolder; }
+
+.section__secondary-header {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: #8b1538;
+  height: 7%; }
+  .section__secondary-header img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0rem 3rem 0 2rem; }
+  .section__secondary-header .section__secondary {
+    font-weight: bolder;
+    font-size: 1.4rem; }
+
+.bus__Item-station {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  position: relative;
+  cursor: pointer; }
+  .bus__Item-station .station-next {
+    width: 1.8rem;
+    height: 1.8rem; }
+    .bus__Item-station .station-next img {
+      width: 100%;
+      height: auto; }
+  .bus__Item-station .station-name {
+    margin-left: 3rem;
+    font-weight: bolder;
+    color: #8b1538; }
+  .bus__Item-station::before {
+    content: '';
+    position: absolute;
+    width: 1.4rem;
+    height: 1.4rem;
+    right: auto;
+    background-color: white;
+    border: 2px solid #8b1538;
+    border-radius: 50%;
+    z-index: 2; }
+  .bus__Item-station:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    top: 60%;
+    height: 80%;
+    right: auto;
+    left: 2rem;
+    border: 2px solid #8b1538;
+    z-index: 1; }
+
+.tab-pane.fade,
+.list_wrapper {
+  height: 83%;
+  overflow-x: hidden;
+  overflow-y: scroll; }
+
+.tab-pane.fade::-webkit-scrollbar,
+.list_wrapper::-webkit-scrollbar {
+  width: 6px;
+  background-color: rgba(174, 91, 116, 0.4); }
+
+.tab-pane.fade::-webkit-scrollbar-track,
+.list_wrapper::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin: 1rem; }
+
+.tab-pane.fade::-webkit-scrollbar-thumb,
+.list_wrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #530d22; }
+
+.station_moreOptions {
+  margin: 0rem 1rem 0 2rem;
+  cursor: pointer; }
+
+.body__container {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden; }
+
+.body__main {
+  width: 100%;
+  height: calc(100% - 70px);
+  display: flex; }
+
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%; }
+
+.content__wrapper {
+  width: 100%;
+  height: 100%; }
+
+.body__container #registrationModal a:active,
+.body__container #registrationModal a:visited,
+.body__container #registrationModal a:hover,
+.body__container #registrationModal a:link {
+  color: #8b1538;
+  position: relative;
+  text-decoration: none;
+  margin: 12px 10px; }
+  .body__container #registrationModal a:active::after,
+  .body__container #registrationModal a:visited::after,
+  .body__container #registrationModal a:hover::after,
+  .body__container #registrationModal a:link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #8b1538;
+    bottom: -5px;
+    right: 0; }
+
+.body__container a:hover::after {
+  height: 2px; }
+
+.tab.tab-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  text-align: center;
+  height: 5rem; }
+  .tab.tab-list .tab-item {
+    background-color: #8b1538;
+    border-radius: 2px;
+    width: 6.2rem;
+    padding: .8rem .5rem;
+    margin: .2rem;
+    font-size: 1.2rem; }
+    .tab.tab-list .tab-item .tab-link {
+      text-transform: capitalize; }
+    .tab.tab-list .tab-item.active {
+      background-color: #530d22;
+      font-weight: bolder; }
+    .tab.tab-list .tab-item:focus, .tab.tab-list .tab-item:hover {
+      background-color: #ae5b74; }
+    .tab.tab-list .tab-item a:focus,
+    .tab.tab-list .tab-item a {
+      color: white;
+      text-decoration: none; }
+
+.sidebar__extension-content ul#tab-list {
+  list-style-type: none; }
+
+.dropdown-menu {
+  padding: 1rem; }
+  .dropdown-menu .dropdown-item {
+    display: block;
+    margin: 1rem; }
+  .dropdown-menu a.dropdown-item {
+    color: #8b1538; }
+  .dropdown-menu a:focus, .dropdown-menu a:hover {
+    color: #530d22;
+    font-weight: bolder;
+    text-decoration: none; }
+
+.header {
+  position: relative;
+  width: 100vw;
+  height: 75px;
+  background-color: #8b1538;
+  display: flex;
+  justify-content: space-between; }
+  .header > div {
+    padding: .2rem; }
+  .header__left {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    justify-content: center;
+    align-items: center; }
+    .header__left-Logo {
+      height: 100%;
+      width: 75px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .header__left-Logo img {
+        width: 90%;
+        margin-top: .8rem; }
+    .header__left-brandName {
+      font-weight: 200;
+      font-size: 1.8rem;
+      line-height: 2rem; }
+      .header__left-brandName span {
+        font-weight: 600;
+        display: block; }
+    .header__left-text {
+      font-size: 2.6rem;
+      font-weight: 600;
+      color: #ffdf55; }
+  .header__right {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem; }
+  .header__icon {
+    width: 25px;
+    position: relative;
+    cursor: pointer; }
+    .header__icon .notification-number {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: .5px solid #fff;
+      border-radius: 2rem;
+      height: 14px;
+      width: 14px;
+      text-align: center;
+      font-size: 1rem;
+      background-color: #ffdf55;
+      color: #000; }
+
+.sidebar {
+  flex: 0 0 75px;
+  height: 100%;
+  background-color: #8b1538; }
+  .sidebar__wrapper {
+    margin-top: 1rem;
+    height: 75%;
+    display: flex;
+    flex-direction: column; }
+  .sidebar__controle-item {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    cursor: pointer; }
+    .sidebar__controle-item.active {
+      background-color: #530d22; }
+    .sidebar__controle-item img {
+      width: 40%;
+      margin: auto; }
+
+.sidebar__extension {
+  flex: 0 1 0rem;
+  max-width: 30rem;
+  height: 100%;
+  background-color: white;
+  transition: all 0.3s cubic-bezier(0.64, 0, 0.78, 0); }
+
+.sidebar__extension.open {
+  flex: 0 1 30rem; }
+
+.sidebar__extension-content {
+  height: 90%;
+  display: flex;
+  flex-direction: column; }
+  .sidebar__extension-content .tab-content {
+    flex: auto; }
+
+.tab-content > .tab-pane {
+  overflow-y: scroll;
+  min-height: 50vh;
+  height: 70vh; }
+
+.sidebar__extension-header {
+  background-color: #ececec;
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  height: 10%; }
+  .sidebar__extension-header .sidebar__header-icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: #8b1538;
+    padding: 8px; }
+    .sidebar__extension-header .sidebar__header-icon img {
+      width: 100%;
+      height: auto; }
+  .sidebar__extension-header .sidebar__header-text {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #8b1538;
+    margin-left: 2rem;
+    text-transform: capitalize; }
+
+.tab-pane.show {
+  opacity: 1; }
+
+.tab-pane.show.empty {
+  height: 90%;
+  background-color: lightgray;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.6rem;
+  padding: 4rem; }
+
+ul.tab {
+  margin-bottom: 0px; }

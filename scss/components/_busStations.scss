@@ -1,0 +1,85 @@
+.section__secondary-header{
+    display: flex;
+    align-items: center;
+    color: $color-white;
+    background-color: $color-primary;
+    height: 7%;
+    & img{
+        width: 2rem;
+        height: 2rem;
+        margin: 0rem 3rem 0 2rem;
+    }
+    & .section__secondary{
+        font-weight: bolder;
+        font-size: 1.4rem;
+    }
+}
+.bus__Item-station{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    position: relative;
+    cursor: pointer;
+    & .station-next{
+        width: 1.8rem;
+        height: 1.8rem;
+        & img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    & .station-name{
+        margin-left: 3rem;
+        font-weight: bolder;
+        color: $color-primary;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        width: 1.4rem;
+        height: 1.4rem;
+        right: auto;
+        background-color: white;
+        border: 2px solid $color-primary;
+        border-radius: 50%;
+        z-index: 2;
+    }
+    &:not(:last-child)::after{
+            content: '';
+            position: absolute;
+            width: 3px;
+            top: 60%;
+            height: 80%;
+            right: auto;
+            left: 2rem;
+            border: 2px solid #8b1538;
+            z-index: 1;
+    }
+}
+.tab-pane.fade,
+.list_wrapper{
+    height: 83%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.tab-pane.fade::-webkit-scrollbar ,
+.list_wrapper::-webkit-scrollbar {
+    width: 6px;
+    background-color: rgba($color-primary-light, .4);
+}
+.tab-pane.fade::-webkit-scrollbar-track,
+.list_wrapper::-webkit-scrollbar-track {
+    border-radius: 10px;
+    margin: 1rem;
+}
+ 
+.tab-pane.fade::-webkit-scrollbar-thumb ,
+.list_wrapper::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: $color-primary-dark;
+}
+.station_moreOptions{
+    margin: 0rem 1rem 0 2rem;
+    cursor: pointer;
+}

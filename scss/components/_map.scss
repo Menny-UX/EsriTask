@@ -1,0 +1,39 @@
+.esri-ui-inner-container .esri-ui-bottom-right {
+    flex-flow: column-reverse;
+}
+.esri-ui-corner .esri-widget.esri-basemap-toggle {
+    position: absolute;
+    right: 5rem;
+}
+.esri-search__container {
+    // border: 1px solid $color-primary;
+    border-radius: 6px;
+}
+.esri-search__input ,
+.esri-ui .esri-component {
+    border-radius: 6px;
+    border: 1px solid $color-primary;
+    margin-bottom: 5px;
+}
+.esri-search .esri-widget--button {
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.esri-input.esri-search__input::placeholder{
+    color: $color-primary;
+}
+.esri-search__submit-button .esri-icon-search::before{
+    color: $color-primary;
+}
+.esri-zoom.esri-widget{
+    border: 0px solid transparent;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+}
+.esri-zoom.esri-widget .esri-widget--button{
+    border: 1px solid $color-primary;
+}
+.esri-component.esri-attribution{
+    border: 0px solid transparent;
+    border-radius: 0px;
+}

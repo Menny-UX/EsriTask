@@ -1,0 +1,76 @@
+.body__container  #registrationModal  a:active,
+.body__container  #registrationModal a:visited,
+.body__container #registrationModal  a:hover,
+.body__container #registrationModal  a:link{
+    color: $color-primary;
+    position: relative;
+    text-decoration: none;
+    margin: 12px 10px;
+    &::after{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: $color-primary;
+        bottom: -5px;
+        right: 0;
+    }
+}
+.body__container a:hover{
+    &::after{
+        height: 2px;
+    }
+}
+.tab.tab-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    text-align: center;
+    height: 5rem;
+    & .tab-item{
+        background-color: $color-primary;
+        border-radius: 2px;
+        width:6.2rem;
+        padding: .8rem .5rem;
+        margin: .2rem;
+        font-size: 1.2rem;
+        & .tab-link{
+            text-transform: capitalize;
+        }
+        &.active{
+            background-color: $color-primary-dark;
+            font-weight: bolder;
+        }
+        &:focus,
+        &:hover{
+
+            background-color: $color-primary-light;
+        }
+        & a:focus,
+        & a{
+            color: white;
+            text-decoration: none;
+        }
+        
+    }
+}
+.sidebar__extension-content ul#tab-list{
+    list-style-type: none;
+}
+
+.dropdown-menu{
+    padding: 1rem;
+    & .dropdown-item{
+        display: block;
+        margin: 1rem;
+    }
+    & a.dropdown-item {
+        color: $color-primary;
+    }
+    & a:focus, a:hover {
+        color: $color-primary-dark;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+}

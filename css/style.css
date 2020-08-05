@@ -7,6 +7,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 1200px) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 900px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 1200px) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -55,13 +64,13 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 2rem 1rem; }
+  padding: 0.8rem 1rem .5rem 1rem; }
   .gallery__section-header {
     text-transform: capitalize;
     font-weight: bolder;
     margin: 0 0 1rem; }
   .gallery__section .gallery__item .gallery__item-img {
-    width: 8rem; }
+    width: 8.2rem; }
   .gallery__section .gallery__item .gallery__item-text {
     background-color: #8b1538;
     color: #fff;
@@ -112,6 +121,83 @@ body {
   border: 0px solid transparent;
   border-radius: 0px; }
 
+.sataliteImage-Label {
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 1px;
+  margin-top: -2.5rem;
+  height: 13rem;
+  width: 105%;
+  text-align: center;
+  color: white;
+  background-color: #530d22;
+  border: 4px solid #530d22; }
+
+.esri-ui-corner .esri-widget.esri-basemap-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  width: 8.4rem;
+  border-radius: 2px;
+  border: 2px solid #530d22; }
+
+.esri-ui-corner .esri-basemap-toggle__container,
+.esri-ui-corner .esri-basemap-toggle__image {
+  width: 8rem; }
+
+.esri-cust-nav .esri-widget--button:last-child,
+.esri-zoom .esri-widget--button:last-child {
+  border-radius: 0px 0px 5px 5px; }
+
+.esri-cust-nav .esri-widget--button,
+.esri-zoom .esri-widget--button {
+  border-radius: 5px 5px 0px 0px; }
+
+.esri-component.esri-cust-nav.esri-widget,
+.esri-component.esri-zoom.esri-widget {
+  border-radius: 5px; }
+
+.esri-ui-corner .esri-basemap-toggle__image--secondary {
+  margin-top: 0px;
+  margin-left: 0px; }
+
+.esri-widget .cust-icon {
+  width: 2rem; }
+  .esri-widget .cust-icon.back {
+    transform: rotate(180deg); }
+
+.esri-cust-nav .esri-widget--button {
+  border: 1px solid #8b1538; }
+
+.esri-component.esri-cust-nav {
+  border-radius: 6px;
+  border: 0px solid #8b1538;
+  margin-bottom: 5px; }
+
+.esri-component .esri-widget,
+.esri-component .esri-widget:hover,
+.esri-ui-corner .esri-component:hover,
+.esri-ui-corner .esri-component {
+  color: #8b1538; }
+
+.live-button {
+  background-color: #530d22;
+  color: #fff;
+  border-radius: 5px;
+  width: 11rem;
+  display: flex;
+  padding: 4px;
+  padding-right: 9px;
+  justify-content: center;
+  align-items: center; }
+  .live-button-img {
+    width: 3rem;
+    height: 100%; }
+  .live-button-text {
+    font-size: 1rem;
+    font-weight: bolder; }
+
 #register-modal .modal-header {
   display: flex;
   justify-content: space-evenly;
@@ -142,12 +228,13 @@ body {
   padding: 2.5rem 6rem 8rem; }
 
 .body__container .modal.in .modal-dialog {
-  width: 40%;
+  min-width: 45rem;
   top: 50%;
-  transform: translate(0, -50%); }
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 .modal.fade .modal-dialog {
-  width: 40%; }
+  width: 45rem; }
 
 .modal-body {
   background-color: #ececec; }
@@ -161,7 +248,7 @@ body {
   align-items: center; }
   .modal .modal__signInList .signIn__Item {
     padding: .5rem;
-    width: 30rem;
+    width: 33rem;
     display: flex;
     align-items: center;
     background-color: #8b1538;
@@ -196,9 +283,9 @@ body {
   width: 60%; }
 
 #airPlanModal .modal-content {
-  border: 3px solid #8b1538;
   background-color: #fff;
-  padding: 3rem; }
+  border: 5px solid #8b1538;
+  padding: 5px; }
   #airPlanModal .modal-content .btn-primary {
     margin-top: 14px;
     background-color: #000032; }
@@ -222,9 +309,12 @@ body {
         padding: 2px 10px;
         margin-bottom: 1rem; }
       #airPlanModal .modal-content .body__content-wrapper .left__section-img {
-        width: 100%; }
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative; }
         #airPlanModal .modal-content .body__content-wrapper .left__section-img img {
-          width: 100%;
+          width: 75%;
           height: auto;
           object-fit: cover;
           object-position: center; }
@@ -232,12 +322,73 @@ body {
       width: 25%;
       display: flex;
       flex-direction: column;
-      align-items: center;
       justify-content: space-evenly; }
       #airPlanModal .modal-content .body__content-wrapper .right__section .company_Logo img {
         width: 10rem; }
-      #airPlanModal .modal-content .body__content-wrapper .right__section-img .detail_image {
-        width: 16rem; }
+      #airPlanModal .modal-content .body__content-wrapper .right__section-img {
+        width: 100%; }
+        #airPlanModal .modal-content .body__content-wrapper .right__section-img .detail_image {
+          width: 16rem; }
+
+#airPlanModal .plan-label {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; }
+  #airPlanModal .plan-label.label-bottom {
+    bottom: -5rem;
+    height: 3rem;
+    width: auto; }
+    #airPlanModal .plan-label.label-bottom img {
+      object-fit: contain;
+      padding: 5px;
+      height: 3rem;
+      width: auto; }
+  #airPlanModal .plan-label .body__content-wrapper .left__section-img img {
+    object-fit: contain;
+    padding: 5px;
+    height: 3rem;
+    width: auto; }
+  #airPlanModal .plan-label.label-top {
+    top: -5rem;
+    height: 3rem;
+    width: auto; }
+    #airPlanModal .plan-label.label-top img {
+      object-fit: contain;
+      padding: 5px;
+      height: 3rem;
+      width: auto; }
+  #airPlanModal .plan-label.label-right, #airPlanModal .plan-label.label-left {
+    flex-direction: column; }
+    #airPlanModal .plan-label.label-right img, #airPlanModal .plan-label.label-left img {
+      width: 3rem;
+      height: auto; }
+  #airPlanModal .plan-label.label-right {
+    right: 0rem;
+    top: 40%;
+    height: auto;
+    width: 3rem; }
+    #airPlanModal .plan-label.label-right img {
+      transform: rotate(270deg); }
+  #airPlanModal .plan-label.label-left {
+    left: 0rem;
+    top: 40%;
+    height: auto;
+    width: 3rem; }
+    #airPlanModal .plan-label.label-left img {
+      transform: rotate(90deg); }
+
+#airPlanModal .modal-content .body__content-wrapper .right__section-img .labels_image,
+#airPlanModal .modal-content .body__content-wrapper .right__section-img .detail_image {
+  width: 90%; }
+
+#airPlanModal .bottomimg,
+#airPlanModal .topimg {
+  object-fit: contain !important;
+  padding: 5px;
+  height: 3rem !important;
+  width: auto; }
 
 .flex-content {
   display: flex;
@@ -246,16 +397,16 @@ body {
   flex-direction: column; }
 
 @media (min-width: 768px) {
-  .modal-dialog {
+  .body__container .modal-dialog {
     width: 600px;
-    margin: 0 auto !important; } }
+    margin: 0; } }
 
 .bus_Item {
   display: flex;
   flex-direction: column;
   width: 100%;
   color: #8b1538;
-  padding: 1rem 2rem;
+  padding: .6rem 2rem;
   cursor: pointer; }
   .bus_Item-header {
     display: flex;
@@ -272,19 +423,44 @@ body {
     .bus_Item-header .bus_name {
       font-weight: bolder; }
 
+.input-group.mb-3 {
+  width: 98%;
+  margin: 3px; }
+  .input-group.mb-3 .form-control {
+    width: 83%; }
+  .input-group.mb-3 .input-group-text {
+    width: 2.4rem;
+    margin: 2px 10px; }
+
+.input-group-prepend {
+  border: 1px solid #8b1538;
+  border-radius: 6px;
+  height: 30px; }
+
+.sidebar__extension-content .form-control {
+  border: 1px solid #8b1538; }
+
+.sidebar__extension-content .form-control:focus {
+  border-color: #ae5b74;
+  box-shadow: inset 0 1px 1px rgba(174, 91, 116, 0.5), 0 0 8px rgba(174, 91, 116, 0.2); }
+
 .section__secondary-header {
   display: flex;
   align-items: center;
   color: #fff;
   background-color: #8b1538;
-  height: 7%; }
+  height: 8%;
+  position: relative; }
   .section__secondary-header img {
     width: 2rem;
     height: 2rem;
-    margin: 0rem 3rem 0 2rem; }
+    margin: 0rem 2rem 0 1rem; }
   .section__secondary-header .section__secondary {
     font-weight: bolder;
     font-size: 1.4rem; }
+  .section__secondary-header .station_moreOptions {
+    position: absolute;
+    right: 0; }
 
 .bus__Item-station {
   display: flex;
@@ -306,22 +482,22 @@ body {
   .bus__Item-station::before {
     content: '';
     position: absolute;
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 1.6rem;
+    height: 1.6rem;
     right: auto;
     background-color: white;
-    border: 2px solid #8b1538;
+    border: 1px solid #8b1538;
     border-radius: 50%;
     z-index: 2; }
   .bus__Item-station:not(:last-child)::after {
     content: '';
     position: absolute;
-    width: 3px;
+    width: 6px;
     top: 60%;
     height: 80%;
     right: auto;
     left: 2rem;
-    border: 2px solid #8b1538;
+    border: 3px solid rgba(174, 91, 116, 0.6);
     z-index: 1; }
 
 .tab-pane.fade,
@@ -337,8 +513,8 @@ body {
 
 .tab-pane.fade::-webkit-scrollbar-track,
 .list_wrapper::-webkit-scrollbar-track {
-  border-radius: 10px;
-  margin: 1rem; }
+  border-left: 1px solid white;
+  border-right: 1px solid white; }
 
 .tab-pane.fade::-webkit-scrollbar-thumb,
 .list_wrapper::-webkit-scrollbar-thumb {
@@ -357,7 +533,7 @@ body {
 
 .body__main {
   width: 100%;
-  height: calc(100% - 70px);
+  height: calc(100% - 63px);
   display: flex; }
 
 #viewDiv {
@@ -403,9 +579,9 @@ body {
   .tab.tab-list .tab-item {
     background-color: #8b1538;
     border-radius: 2px;
-    width: 6.2rem;
+    width: 7rem;
     padding: .8rem .5rem;
-    margin: .2rem;
+    margin: 0.1rem;
     font-size: 1.2rem; }
     .tab.tab-list .tab-item .tab-link {
       text-transform: capitalize; }
@@ -413,7 +589,7 @@ body {
       background-color: #530d22;
       font-weight: bolder; }
     .tab.tab-list .tab-item:focus, .tab.tab-list .tab-item:hover {
-      background-color: #ae5b74; }
+      font-weight: bolder; }
     .tab.tab-list .tab-item a:focus,
     .tab.tab-list .tab-item a {
       color: white;
@@ -428,7 +604,10 @@ body {
     display: block;
     margin: 1rem; }
   .dropdown-menu a.dropdown-item {
-    color: #8b1538; }
+    color: #8b1538;
+    display: flex;
+    width: 19rem;
+    padding: 4px; }
   .dropdown-menu a:focus, .dropdown-menu a:hover {
     color: #530d22;
     font-weight: bolder;
@@ -437,7 +616,7 @@ body {
 .header {
   position: relative;
   width: 100vw;
-  height: 75px;
+  height: 65px;
   background-color: #8b1538;
   display: flex;
   justify-content: space-between; }
@@ -448,11 +627,10 @@ body {
     display: flex;
     flex-direction: row;
     color: #fff;
-    justify-content: center;
     align-items: center; }
     .header__left-Logo {
       height: 100%;
-      width: 75px;
+      flex: 0 0 65px;
       display: flex;
       justify-content: center;
       align-items: center; }
@@ -462,7 +640,8 @@ body {
     .header__left-brandName {
       font-weight: 200;
       font-size: 1.8rem;
-      line-height: 2rem; }
+      line-height: 2rem;
+      word-break: break-all; }
       .header__left-brandName span {
         font-weight: 600;
         display: block; }
@@ -482,6 +661,8 @@ body {
     width: 25px;
     position: relative;
     cursor: pointer; }
+    .header__icon img {
+      width: 100%; }
     .header__icon .notification-number {
       position: absolute;
       top: 0;
@@ -496,7 +677,7 @@ body {
       color: #000; }
 
 .sidebar {
-  flex: 0 0 75px;
+  flex: 0 0 65px;
   height: 100%;
   background-color: #8b1538; }
   .sidebar__wrapper {
@@ -516,17 +697,17 @@ body {
       margin: auto; }
 
 .sidebar__extension {
-  flex: 0 1 0rem;
-  max-width: 30rem;
+  flex: 0 0 0rem;
+  width: 30rem;
   height: 100%;
   background-color: white;
   transition: all 0.3s cubic-bezier(0.64, 0, 0.78, 0); }
 
 .sidebar__extension.open {
-  flex: 0 1 30rem; }
+  flex: 0 0 30rem; }
 
 .sidebar__extension-content {
-  height: 90%;
+  height: 91%;
   display: flex;
   flex-direction: column; }
   .sidebar__extension-content .tab-content {
@@ -542,7 +723,7 @@ body {
   display: flex;
   padding: 1rem;
   align-items: center;
-  height: 10%; }
+  height: 9%; }
   .sidebar__extension-header .sidebar__header-icon {
     width: 4rem;
     height: 4rem;

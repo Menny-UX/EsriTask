@@ -37,3 +37,84 @@
     border: 0px solid transparent;
     border-radius: 0px;
 }
+.sataliteImage-Label{
+    font-size: 1rem;
+    font-weight: bolder;
+    padding: 1px;
+    margin-top: -2.5rem;
+    height: 13rem;
+    width: 105%;
+    text-align: center;
+    color: white;
+    background-color: $color-primary-dark;
+    border: 4px solid $color-primary-dark;
+}
+
+.esri-ui-corner .esri-widget.esri-basemap-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    width: 8.4rem;
+    border-radius: 2px;
+    border: 2px solid $color-primary-dark;
+}
+.esri-ui-corner .esri-basemap-toggle__container,
+.esri-ui-corner .esri-basemap-toggle__image {
+    width: 8rem;
+}
+.esri-cust-nav .esri-widget--button:last-child ,
+.esri-zoom .esri-widget--button:last-child {
+    border-radius: 0px 0px 5px 5px;
+}
+.esri-cust-nav .esri-widget--button,
+.esri-zoom .esri-widget--button {
+    border-radius: 5px 5px 0px 0px;
+}
+.esri-component.esri-cust-nav.esri-widget,
+.esri-component.esri-zoom.esri-widget{
+    border-radius: 5px;
+}
+.esri-ui-corner .esri-basemap-toggle__image--secondary {
+     margin-top: 0px; 
+     margin-left: 0px;
+}
+.esri-widget .cust-icon{
+    width: 2rem;
+    &.back{
+        transform: rotate(180deg)
+    }
+}
+.esri-cust-nav .esri-widget--button{
+    border: 1px solid $color-primary;
+}
+.esri-component.esri-cust-nav {
+    border-radius: 6px;
+    border: 0px solid #8b1538;
+    margin-bottom: 5px;
+}
+.esri-component .esri-widget,
+.esri-component .esri-widget:hover,
+.esri-ui-corner .esri-component:hover,
+.esri-ui-corner .esri-component {
+    color: #8b1538;
+}
+.live-button{
+    background-color: #530d22;
+    color: #fff;
+    border-radius: 5px;
+    width: 11rem;
+    display: flex;
+    padding: 4px;
+    padding-right: 9px;
+    justify-content: center;
+    align-items: center;
+    &-img{
+        width: 3rem;
+        height: 100%;
+    }
+    &-text{
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+}

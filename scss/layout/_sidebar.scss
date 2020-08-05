@@ -26,17 +26,17 @@
 }
 
 .sidebar__extension{
-    flex: 0 1 0rem;
-    max-width: 30rem;
+    flex: 0 0 0rem;
+    width: 30rem;
     height: 100%;
     background-color: white;
     transition: all 0.3s cubic-bezier(0.64, 0, 0.78, 0);
 }
 .sidebar__extension.open{
-    flex: 0 1 30rem;
+    flex: 0 0 30rem;
 }
 .sidebar__extension-content{
-    height: 90%;
+    height: 91%;
     display: flex;
     flex-direction: column;
     & .tab-content{
@@ -54,7 +54,7 @@
     display: flex;
     padding: 1rem;
     align-items: center;
-    height: 10%;
+    height: 9%;
     & .sidebar__header{
         &-icon{
             width: 4rem;

@@ -2,7 +2,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 0.8rem 1rem .5rem 1rem;
     &-header{
         text-transform: capitalize;
         font-weight: bolder;
@@ -11,7 +11,7 @@
     & .gallery__item{
         
         & .gallery__item-img{
-            width: 8rem;
+            width: 8.2rem;
         }
         & .gallery__item-text{
             background-color: #8b1538;

@@ -167,6 +167,12 @@
             <ul class="tab tab-list" id="tab-list">
             ${tempTabsList.join(' ')}
             </ul>
+            <div class="input-group input-group-sm mb-3">
+            <input type="text" class="form-control" placeholder="Search..." aria-label="Recipient's username" aria-describedby="basic-addon2">
+              <div class="input-group-prepend"  id="basic-addon2">
+                <img  class="input-group-text" src="img/nav/search.png" alt="search" />
+              </div>
+            </div>
             <div class="tab-content" id="tab-tabContent">
             ${tempTabPaneList.join(' ')}
             </div>
@@ -248,17 +254,28 @@
         sectionContent.innerHTML = `<div class="section__secondary-header" >
         <img src="./img/nav/back.png"/>
         <div class="bus_Item-header">
-        <div class="bus_id">${station.id}</div>
         <div class="bus_name">${station.name}</div>
         </div>
         <div class="station_moreOptions dropdown">
         <img src="./img/nav/more1.png" 
         id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"/>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <a class="dropdown-item u-divider-horizontal" href="#">Route From</a>
-          <a class="dropdown-item u-divider-horizontal" href="#">Route To</a>
-          <a class="dropdown-item u-divider-horizontal" href="#">Add to favourites</a>
-          <a class="dropdown-item" href="#">Download Schedule</a>
+          <a class="dropdown-item u-divider-horizontal" href="#">
+            <img class="dropdown-item-icon" src="img/nav/marker.png" />
+            <div class="dropdown-item-text">Route From</div>
+          </a>
+          <a class="dropdown-item u-divider-horizontal" href="#">
+            <img class="dropdown-item-icon" src="img/nav/route.png" />
+            <div class="dropdown-item-text">Route To</div>
+          </a>
+          <a class="dropdown-item u-divider-horizontal" href="#">
+           <img class="dropdown-item-icon" src="img/nav/to-favorites.png" />
+            <div class="dropdown-item-text">Add to favourites</div>
+          </a>
+          <a class="dropdown-item" href="#">
+            <img class="dropdown-item-icon" src="img/nav/download.png" />
+            <div class="dropdown-item-text">Download Schedule</div>
+          </a>
         </div>
         </div>
         </div>

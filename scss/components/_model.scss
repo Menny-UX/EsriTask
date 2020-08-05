@@ -32,12 +32,13 @@
     padding: 2.5rem 6rem 8rem;
 }
 .body__container .modal.in .modal-dialog {
-    width: 40%;
+    min-width: 45rem;
     top: 50%;
-    transform: translate(0,-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .modal.fade .modal-dialog {
-    width: 40%;
+    width: 45rem;
 }
 .modal{
     &-body{
@@ -53,7 +54,7 @@
         align-items: center;
         & .signIn__Item{
             padding: .5rem;
-            width: 30rem;
+            width: 33rem;
             display: flex;
             align-items: center;
             background-color: #8b1538;
@@ -102,9 +103,9 @@
         width: 60%;
     }
     & .modal-content{
-        border: 3px solid $color-primary;
         background-color: $color-white;
-        padding: 3rem;
+        border: 5px solid $color-primary;
+        padding: 5px;
         & .btn-primary{
             margin-top: 14px;
             background-color: #000032;
@@ -131,8 +132,11 @@
                 }
                 &-img{
                     width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
                     & img{
-                        width: 100%;
+                        width: 75%;
                         height: auto;
                         object-fit: cover;
                         object-position: center;
@@ -143,7 +147,6 @@
                 width: 25%;
                 display: flex;
                 flex-direction: column;
-                align-items: center;
                 justify-content: space-evenly;
                 & .company_Logo{
 
@@ -152,6 +155,7 @@
                     }
                 }
                 &-img{
+                        width: 100%;
                     & .detail_image{
                         width: 16rem;
                     }
@@ -160,16 +164,93 @@
         }
     }
 }
+#airPlanModal .plan-label{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    &.label-bottom{
+        bottom: -5rem;
+        height:3rem;
+        width: auto;
+
+        & img {
+            object-fit: contain;
+            padding: 5px;
+            height: 3rem;
+            width: auto;
+        }
+      
+    }        
+    .body__content-wrapper .left__section-img img {
+        object-fit: contain;
+        padding: 5px;
+        height: 3rem;
+        width: auto;
+    }
+    &.label-top{
+        top: -5rem;
+        height:3rem;
+        width: auto;
+        & img {
+       
+            object-fit: contain;
+            padding: 5px;
+            height: 3rem;
+            width: auto;
+        }
+        
+    }        
+    &.label-right,
+    &.label-left{
+        flex-direction: column;
+        & img {
+            width: 3rem;
+            height: auto;
+        }
+    } 
+    &.label-right{
+        right: 0rem;
+        top: 40%;
+        height: auto;
+        width: 3rem;
+        & img{
+            transform: rotate(270deg);
+        }
+    }
+    &.label-left{
+        left: 0rem;
+        top: 40%;
+        height: auto;
+        width: 3rem;
+        & img{
+            transform: rotate(90deg);
+        }
+    }
+  
+}
+#airPlanModal .modal-content .body__content-wrapper .right__section-img .labels_image ,
+#airPlanModal .modal-content .body__content-wrapper .right__section-img .detail_image {
+    width: 90%;
+}
+#airPlanModal .bottomimg,
+#airPlanModal .topimg{
+    object-fit: contain !important;
+    padding: 5px;
+    height: 3rem !important;
+    width: auto;
+}
 .flex-content{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
 @media (min-width: 768px){
-    .modal-dialog {
+    .body__container .modal-dialog {
         width: 600px;
-        margin: 0 auto !important;
+        margin: 0; 
     }
 }

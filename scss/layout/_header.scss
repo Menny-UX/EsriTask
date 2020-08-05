@@ -15,12 +15,13 @@
         display: flex;
         flex-direction: row;
         color: $color-white;
-        justify-content: center;
+        // justify-content: center;
         align-items: center;
+        
 
         &-Logo{
             height: 100%;
-            width: $width-sidebar;
+            flex: 0 0 $width-sidebar;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -33,7 +34,7 @@
             font-weight: 200;
             font-size: 1.8rem;
             line-height: 2rem;
-
+            word-break: break-all;
             & span{
                 font-weight: 600;
                 display: block;
@@ -53,11 +54,15 @@
         justify-content: center;
         align-items: center;
         margin-right: 2rem;
+      
     }
     &__icon{
         width: 25px;
         position: relative;
         cursor: pointer;
+        & img{
+            width: 100%;
+        }
         & .notification-number{
             position: absolute;
             top: 0;
